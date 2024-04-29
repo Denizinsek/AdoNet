@@ -43,6 +43,7 @@
             this.BtnUpdate = new System.Windows.Forms.Button();
             this.BtnList = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnSaleTransition = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,7 +138,7 @@
             this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView1.Location = new System.Drawing.Point(348, 9);
             this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.Size = new System.Drawing.Size(579, 410);
+            this.DataGridView1.Size = new System.Drawing.Size(690, 410);
             this.DataGridView1.TabIndex = 10;
             this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
@@ -185,11 +186,24 @@
             this.BtnDelete.UseVisualStyleBackColor = true;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
+            // BtnSaleTransition
+            // 
+            this.BtnSaleTransition.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSaleTransition.Location = new System.Drawing.Point(819, 425);
+            this.BtnSaleTransition.Name = "BtnSaleTransition";
+            this.BtnSaleTransition.Size = new System.Drawing.Size(219, 48);
+            this.BtnSaleTransition.TabIndex = 15;
+            this.BtnSaleTransition.Text = "Satış\'a Geçiş";
+            this.BtnSaleTransition.UseVisualStyleBackColor = true;
+            this.BtnSaleTransition.Click += new System.EventHandler(this.BtnSaleTransition_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1050, 477);
+            this.Controls.Add(this.BtnSaleTransition);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnList);
             this.Controls.Add(this.BtnUpdate);
@@ -206,7 +220,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Müşteriler";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -230,6 +245,7 @@
         private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.Button BtnList;
         private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button BtnSaleTransition;
     }
 }
 

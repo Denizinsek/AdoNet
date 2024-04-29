@@ -86,5 +86,11 @@ namespace AdoNet_Procedural
             TxtBxCity.Text = row.Cells["City"].Value.ToString();
             TxtBxPhone.Text = row.Cells["Phone"].Value.ToString();
         }
+
+        Sales salesForm = new Sales();
+        private void BtnSaleTransition_Click(object sender, EventArgs e)
+        {
+            salesForm.Show();
+        }
     }
 }
